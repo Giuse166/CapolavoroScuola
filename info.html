@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="bar1">
+
+            <img src="images/logo.png" alt="logo">
+            <div class="navigazione">
+                <a href="index.html">Home</a>
+                <a class="active">Info</a>
+                <a>Ecc.</a>
+            </div>
+        </div>
+        <div class="image1">
+            <div class="image1-text">
+                <h1 style="font-size: 60px; margin: 5px;">Progetto Capolavoro</h1>
+                <h1>Nome cognome</h1>
+            </div>
+        </div>
+        <div style="height: 9999px;">dsda</div>
+        <script src="" async defer></script>
+    </body>
+
+
+    <style>
+        @media only screen and (max-device-width: 1366px) {
+        .parallax-container {
+            background-attachment: scroll;
+        }
+        }   
+        body{margin:0}
+        .bar1{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            top: 50%;
+            background-color:hsl(227, 45%, 43%);
+            height: 128px;
+        }
+        .bar1 .navigazione{
+            margin-left: auto;
+            margin-right: 10%;
+        }
+        .bar1 .navigazione a{
+            float: right;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 28px 32px;
+            text-decoration: none;
+            font-size: 40px;
+        }
+        .bar1 .navigazione a:hover{
+            background-color: #ddd;
+            color: black;
+        }
+        .bar1 .navigazione a:active{
+            background-color: #3b3b3b;
+            color: black;
+        }
+        .bar1 .navigazione a.active{
+            background-color: hsl(227, 46%, 17%);
+            color: white;
+        }
+        .bar1 img{
+            height: 80%;
+            margin: 10px;
+            
+        }
+        .image1{
+            height: 600px;
+            overflow: hidden;
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/scuola2.jpg");
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .image1-text{
+            padding-left: 15px;
+            padding-right: 15px;
+            background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+            box-shadow: 5px 5px 5px rgb(34, 34, 34);
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+            animation: image 5s;
+
+        }
+
+    body {
+
+        background-color: #ADBBDA;
+    }
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes image {
+        0% {
+            opacity: 0;
+            margin-top: 100px;
+        }
+        100% {
+            margin-top:0px;
+            opacity: 1;
+        }
+    }
+    </style>
+    <script>
+        $(window).scroll(function(e){
+        parallax();
+        });
+
+        function parallax(){
+        var scrolled = $(window).scrollTop();
+        $('.image1').css('top',-(scrolled*0.0315)+'rem');
+        $('.image1 > h1').css('top',-(scrolled*-0.005)+'rem');
+        $('.image1 > h1').css('opacity',1-(scrolled*.00175));
+        };
+
+    </script>
+</html>

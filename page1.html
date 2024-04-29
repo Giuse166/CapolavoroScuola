@@ -21,8 +21,8 @@
         <div class="bar1">
             <img src="images/logo.png" alt="logo">
             <div id="navigazione">
-                <a href="./index.html" class="active">Home</a>
-                <a href="./page1.html">Cos'è l'AI?</a>
+                <a href="./index.html">Home</a>
+                <a href="./page1.html" class="active">Cos'è l'AI?</a>
                 <a>Ecc.</a>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="navBar()">
@@ -32,10 +32,6 @@
         <div class="image1">
             <div class="image1-text">
                 <h1 style="font-size: 60px; margin: 5px;">L'Intelligenza Artificiale</h1>
-                <h1>Progetto Capolavoro di NOME COGNOME</h1>
-            </div>
-            <div>
-                <a id="startButton" href="page1.html"><span>Inizia</span></a>
             </div>
         </div>
     </body>
@@ -48,43 +44,6 @@
             padding: 0;
         }
 
-        .image1 #startButton{
-            letter-spacing: 0.05em;
-            opacity: 0;
-            text-align: center;
-            position: absolute;
-            top: 60%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            animation: image 5s;
-            animation-fill-mode: forwards;
-            animation-delay: 0.8s;
-            background: #3b3b3b;
-            height: auto;
-            width: auto;
-            padding: 10px 30px;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: white;
-            font-size: 32px;
-            transition: 0.5s;
-        }
-        .image1 #startButton:hover{
-            letter-spacing: 0.15em;
-            color: white;
-            background: rgb(61, 128, 252);
-            box-shadow: 0 0 35px rgb(61, 128, 252);
-        }
-        .image1 #startButton::before{
-            content:"";
-            position: absolute;
-            inset: 2px;
-            background: #313131;
-        }
-        .image1 #startButton span{
-            position: relative;
-            z-index: 1;
-        }
 
         @media only screen and (max-device-width: 1366px) {
         .parallax-container {
@@ -192,9 +151,9 @@
             display: flex;
             flex-direction: column;
             top: 128px;
-            height: calc(100vh - 128px);
+            height: 600px;
             overflow: hidden;
-            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/scuola2.jpg");
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/AI.png");
             width: 100%;
             background-position: center;
             background-repeat: no-repeat;
