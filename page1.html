@@ -64,6 +64,35 @@
         <div class="content">
             <hr>
             <h1>Il test di Turing</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste deserunt temporibus iusto non porro perferendis minus ratione laudantium vero incidunt similique, ipsa cupiditate tenetur sunt rem nesciunt veritatis provident iure.</p>
+            <img src="https://placehold.co/600x400/png" alt="ai">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quos eveniet, cupiditate architecto hic nemo iusto. Iste nam tempore inventore, ullam ipsum sapiente quis nulla, molestiae voluptatum atque soluta minus?</p>
+            <hr>
+            <h1>Le reti neurali</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste deserunt temporibus iusto non porro perferendis minus ratione laudantium vero incidunt similique, ipsa cupiditate tenetur sunt rem nesciunt veritatis provident iure.</p>
+            <img src="https://placehold.co/600x400/png" alt="ai">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quos eveniet, cupiditate architecto hic nemo iusto. Iste nam tempore inventore, ullam ipsum sapiente quis nulla, molestiae voluptatum atque soluta minus?</p>
+            <hr>
+        </div>
+        <div class="applicazioni">
+            <h1>Alcune delle principali applicazioni dell'intelligenza artificiale</h1>
+            <div id="app">
+                <div id="buttons">
+                    <button id="robotica" onclick="return buttons(this.id)">Robotica</button>
+                    <button id="sistemi" onclick="return buttons(this.id)">Sistemi esperti</button>
+                    <button id="pianificazione" onclick="return buttons(this.id)">Pianificazione</button>
+                    <button id="domotica" onclick="return buttons(this.id)">Domotica</button>
+                    <button id="giochi" onclick="return buttons(this.id)">Giochi</button>
+                </div>
+                <hr>
+                <div id="appTextBox">
+                    <div id="appText">
+                        <h1 id="appTitle"></h1>
+                        <p id="appContent"></p>
+                    </div>
+                    <img id="appImg" src="images/default.png" alt="">
+                </div>
+            </div>
         </div>
 
     </body>
@@ -84,7 +113,7 @@
         }
 
 
-        hr{
+        .content hr{
             margin-top: 5em;
             margin-bottom: 3em;
         }
@@ -149,6 +178,7 @@
         .content img{
             display: block;
             margin-top: 5rem;
+            margin-bottom: 5rem;
             margin-left: auto;
             margin-right: auto;
             width: 75%;
@@ -180,8 +210,94 @@
             transform: translate(-50%,-50%);
             color: white;
             animation: image 5s;
-}        
+        }        
 
+        .applicazioni{
+            width: 100%;
+            background-color: rgb(19, 19, 19);
+            padding: 50px 0 10em 0;
+        }
+
+        .applicazioni *{
+            color: white;
+            overflow-wrap: break-word;
+        }
+        .applicazioni h1{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-bottom: 3em;
+
+        }
+        #app{
+            display: inline-flex;
+            flex-direction: row;
+            height: auto;
+            width: 100%;
+        }
+        #app button{
+            text-wrap: nowrap;
+            background-color: gold;
+            text-shadow: rgb(77, 77, 77) 2px 2px;
+            font-size: 32px;
+            border-radius: 24px;
+            color: white;
+            margin: 5px;
+            height:80px ;
+            transition: 0.5s;
+        }
+        #app button:hover{
+            letter-spacing: 0.15em;
+        }
+        #app button:active{
+            background-color:rgb(148, 126, 0) ;
+        }
+
+        #buttons{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-left: 20%;
+            float: left;
+            width: 25%;
+            margin-right: auto;
+            row-gap: 2px;
+
+        }
+        #appTextBox{
+            margin: 0 3em 0 3em;
+            display: flex;
+            flex-direction: row;
+            float: right;
+            margin-right: 5%;
+            transition: 0.5s;
+            width: 1500px;
+            height: auto;
+        }
+        #appText{
+            margin-right: 2em;
+            margin-bottom: 5px;
+            display: flex;
+            flex-direction: column;
+            text-wrap: wrap;
+
+        }
+        #appImg{
+            align-self: center;
+            width: 600px;
+            height: 400px;
+        }
+        #appText h1{
+            margin-bottom: 1em;
+        }
+
+        #app hr{
+            margin: 0 3em 0 3em;
+            height: auto;
+            justify-self: center;
+        }
 
     </style>
     <script>
@@ -192,6 +308,33 @@
             }else{
                 x.style.display="block"
             }
+        }
+
+        function buttons(obj){
+            var x = obj;
+            var title = document.getElementById("appTitle");
+            var content = document.getElementById("appContent");
+            var img = document.getElementById("appImg");
+            switch(x){
+                case "robotica":
+                    title.innerHTML="La Robotica"
+                    content.innerHTML="La robotica è la disciplina dell'ingegneria che studia e sviluppa metodi che permettano a un robot di eseguire dei compiti specifici riproducendo in modo automatico il lavoro umano. Nella robotica l'intelligenza artificiale si occupa principalmente della navigazione."
+                    img.src="images/AI.png"
+                    break;
+                case "sistemi":
+                    title.innerHTML="I Sistemi Esperti"
+                    content.innerHTML="I sistemi esperti si occupano di riprodurre in modo artificiale le prestazioni di una o più persone esperte in un determinato campo. E' dotato di una base di conoscenza dalla quale l'intelligenza artificiale può trarre informazioni, per poi giungere a una conclusione."
+                    img.src="images/sistemaEsperto.png"
+                    break;
+                case "pianificazione": 
+                    break;
+                case "domotica":
+                    break;
+                case "giochi":
+                    break;
+
+            } 
+
         }
 
     </script>
