@@ -84,9 +84,9 @@ body,html{
         text-overflow: clip;
         color: #f2f2f2;
         text-align: center;
-        padding: 28px 32px;
+        padding: 28px 12px;
         text-decoration: none;
-        font-size: 40px;
+        font-size: 24px;
     }
     .bar1 #navigazione a:hover{
         background-color: #ddd;
