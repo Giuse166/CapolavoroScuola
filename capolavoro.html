@@ -39,12 +39,49 @@
         </div>
         <div style="margin-top: 128px;"></div>
         <div class="content">
+            <h1>Cos'è il capolavoro?</h1>
+            <p>Il Capolavoro, presente nella sua sezione specifica dell'E-Portfolio, è un lavoro indicato come rappresentativo delle competenze sviluppate durante il percorso scolastico.</p>
+            <img src="images/Unica.jpg" alt="unica">
             <hr>
-            <h1>Titolo</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta adipisci placeat ea mollitia dignissimos magni suscipit excepturi quae assumenda vero sequi incidunt quisquam ipsam voluptate labore rem, nostrum atque autem?</p>
+            <h1>Competenze sviluppate</h1>
+            <h2>Html e CSS</h2>
+            <p>Questo progetto rappresenza le competenze sviluppate in informatica, attraverso l'uso di Html, css e javascript. <br><br> Le pagine presentano un design responsivo, ovvero sono in grado di adattarsi in modo automatico alla risoluzione selezionata.</p>
         </div>
-
+        <div class="images">
+            <img src="images/responsivo.png" alt="r1">
+            <img src="images/responsivo2.png" alt="r2">
+        </div>
+        <div class="content">
+            <hr>
+            <h2>Educazione Civica</h2>
+            <p>L'intelligenza artificiale è un tema molto importante per l'educazione civica, in quanto essa influenzerà in molti aspetti la società moderna.<br><br>Il suo impatto sta trasformando infatti molti settori, per cui comprenderne il funzionamento è molto importante.<br><br>Emergono in oltre nuove questioni etiche, dalla privacy, al lavoro, all'affidabilità e la qualità delle informazioni, alla possibilità di fabbricare informazioni false con l'uso dell'AI.</p>
+            <img src="images/etica.jpg" alt="etica">
+            <hr>
+        </div>
 
         <script src="navbar.js"></script>
     </body>
+
+    <style>
+        .images{
+            margin-top: 5em;
+            display: flex;
+            flex-direction: row;
+            height: 500px;
+            justify-content: center;
+            gap: 2em;
+            margin-bottom: 5em;
+        }
+        .images img{
+            border-radius: 10px;
+            height: 100%;
+            width: auto;
+        }
+
+        @media only screen and (max-device-width:1365px){
+            .images{
+                flex-direction: column;
+            }
+        }
+    </style>
 </html>
