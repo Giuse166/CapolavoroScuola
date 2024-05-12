@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./fontawesome/css/all.css">
 <html>
     <head>
         <meta charset="utf-8">
@@ -12,7 +12,7 @@
         <title>Capolavoro</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="navBar.css">
+        <link rel="stylesheet" href="common.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -21,7 +21,19 @@
         <div class="bar1">
             <img src="images/logo.png" alt="logo">
             <div id="navigazione">
-                <a>Ecc.</a>
+                <a href="capolavoro.html">Capolavoro</a>
+                <a href="video.html">Video</a>
+                <a href="immagini.html">Immagini</a>
+                <a href="./chatbot.html">Chatbot</a>
+                <a href="./page1.html">Cos'è l'AI?</a>
+                <a href="./index.html" class="active">Home</a>
+            </div>
+            <div id="navigazioneMobile">
+                <a href="capolavoro.html">Capolavoro</a>
+                <a href="musica.html">Musica</a>
+                <a href="video.html">Video</a>
+                <a href="immagini.html">Immagini</a>
+                <a href="./chatbot.html">Chatbot</a>
                 <a href="./page1.html">Cos'è l'AI?</a>
                 <a href="./index.html" class="active">Home</a>
             </div>
@@ -134,15 +146,5 @@
 
    
     </style>
-    <script>
-        function navBar(){
-            var x = document.getElementById("navigazione")
-            if(x.style.display==="block"){
-                x.style.display="none";
-            }else{
-                x.style.display="block"
-            }
-        }
-
-    </script>
+    <script src="navbar.js"></script>
 </html>

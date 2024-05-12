@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./fontawesome/css/all.css">
 <html>
     <head>
         <meta charset="utf-8">
@@ -12,8 +12,9 @@
         <title>Capolavoro</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./navBar.css">
-        
+        <link rel="stylesheet" href="./common.css">
+        <link rel="stylesheet" href="./page1.css">
+        <link rel="stylesheet" href="./fontawesome/css/all.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -22,7 +23,18 @@
         <div class="bar1">
             <img src="images/logo.png" alt="logo">
             <div id="navigazione">
-                <a>Ecc.</a>
+                <a href="capolavoro.html">Capolavoro</a>
+                <a href="video.html">Video</a>
+                <a href="immagini.html">Immagini</a>
+                <a href="./chatbot.html">Chatbot</a>
+                <a href="./page1.html" class="active">Cos'è l'AI?</a>
+                <a href="./index.html">Home</a>
+            </div>
+            <div id="navigazioneMobile">
+                <a href="capolavoro.html">Capolavoro</a>
+                <a href="video.html">Video</a>
+                <a href="immagini.html">Immagini</a>
+                <a href="./chatbot.html">Chatbot</a>
                 <a href="./page1.html" class="active">Cos'è l'AI?</a>
                 <a href="./index.html">Home</a>
             </div>
@@ -30,10 +42,12 @@
                 <i class="fa fa-bars"></i>
             </a>
         </div>
+
         <div class="image1">
             <div class="image1-text">
             </div>
         </div>
+
         <div class="content">
             <h1>Che cos'è l'intelligenza artificiale?</h1>
             <p>L'Intelligenza Artificiale, è il ramo dell'informatica che si occupa, attraverso dei sistemi Hardware e Software, di riprodurre una prestazione caratteristica dell’intelletto umano, come il ragionamento, l’apprendimento e la creatività.</p>
@@ -41,10 +55,11 @@
             <img src="https://placehold.co/600x400/png" alt="ai">
             <hr>
             <h1>Intelligenza artificiale forte e debole</h1>
-            <p>inserire spiegazione sul come è suddivisibile in forte e debole Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quis quidem vitae ipsum, adipisci aliquam at cumque ex enim voluptas facilis nesciunt similique consectetur! Reiciendis, eligendi. Culpa possimus delectus eum?:</p>
+            <p style="margin-bottom: 5em;">inserire spiegazione sul come è suddivisibile in forte e debole Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quis quidem vitae ipsum, adipisci aliquam at cumque ex enim voluptas facilis nesciunt similique consectetur! Reiciendis, eligendi. Culpa possimus delectus eum?:</p>
         </div>
+
         <div class="classificazioneAI">
-            <div id="forte">
+            <div>
                 <h1>L'intelligenza artificiale forte</h1>
                 <ul>
                     <li>Ritiene che un computer possa potenzialmente essere dotato da un'intelligenza indistinguibile da quella umana.</li>
@@ -52,7 +67,7 @@
                     <li>La sua principale applicazione sono i <b>Sistemi Esperti</b>, ovvero dei programmi che riproducono il comportamento di un umano esperto su un certo campo, nel quale l'AI sarebbe in grado di <b>fornire risposte e di giustificarle</b>.</li>
                 </ul>
             </div>
-            <div id="debole">
+            <div>
                 <h1>L'intelligenza artificiale debole</h1>
                 <ul>
                     <li>Contrapponendosi a quella forte, sostiene che un <b>Computer non potrà mai essere uguale a una mente umana</b>.</li>
@@ -61,6 +76,7 @@
                 </ul>
             </div>
         </div>
+
         <div class="content">
             <hr>
             <h1>Il test di Turing</h1>
@@ -74,6 +90,7 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quos eveniet, cupiditate architecto hic nemo iusto. Iste nam tempore inventore, ullam ipsum sapiente quis nulla, molestiae voluptatum atque soluta minus?</p>
             <hr>
         </div>
+
         <div class="applicazioni">
             <h1>Alcune delle principali applicazioni dell'intelligenza artificiale</h1>
             <div id="app">
@@ -95,221 +112,26 @@
             </div>
         </div>
 
+        <div class="content">
+            <hr>
+            <h1>
+                L'intelligenza artificiale generativa e gli strumenti AI
+            </h1>
+            <p>L'intelligenza artificiale generativa è un tipo di Intelligenza Artificiale in grado di generare testo, immagini, video, musica o altri media in risposta a delle richieste, dette "Prompt", utilizzando algoritmi di <b>Machine Learning.</b></p>
+            <ul>
+                <li><a href="chatbot.html">Chatbot o Generatori di testo</a>: Sono capaci di elaborare il linguaggio naturale, tradurre automaticamente e di generare linguaggio naturale. Alcuni modelli sono in oltre in grado di generare codice sorgente per nuovi programmi, se addestrati adeguatamente.</li>
+                <li><a href="immagini.html">Generatori di Immagini</a>: Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nihil commodi nemo ducimus vitae quisquam velit in nesciunt, voluptates, quibusdam a sequi autem numquam ea placeat? Numquam laudantium doloremque veritatis.</li>
+                <li><a href="video.html">Generatori di Video</a>: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, necessitatibus odio omnis blanditiis id commodi iste, reiciendis esse suscipit quaerat delectus quas voluptates eveniet doloremque tempora accusantium dolorum! Odio, nobis?</li>
+                <li><b>Generatori di Musica:</b> </li>
+            </ul>
+            <hr>
+        </div>
+
     </body>
 
+    <script src="navbar.js"></script>
 
-    <style>
-
-        *{
-            word-wrap: break-word;
-        }
-        .body{
-            position:absolute
-        }
-
-        .content{
-            margin: 0 33% 0 33%;
-            padding-bottom: 5em;
-        }
-
-
-        .content hr{
-            margin-top: 5em;
-            margin-bottom: 3em;
-        }
-        li{
-            margin: 10px 0;
-        }
-        h1{
-            margin-top: 5rem;
-            margin-bottom: 3rem;
-            text-align: left;
-            font-weight: bold;
-            font-size: 36px;
-        }
-        
-        p,ul{
-            margin-bottom: 3rem;
-            text-align: left;
-            font-size: 24px
-        }
-
-        .classificazioneAI{
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            display: flex;
-        }
-
-        .classificazioneAI div{
-            display: flex;
-            flex-direction: column;
-            border-radius:25px ;
-            background-color:#34598E ;
-            width: 45%;
-            height: 50%;
-        }
-
-        .classificazioneAI p, .classificazioneAI h1, .classificazioneAI ul{
-            text-align: left;
-            margin-top: 1em;
-            margin-left: 3em;
-            margin-right: 3em;
-            color: white;
-        }
-
-        .classificazioneAI ul{
-            margin-top: 0px;
-        }
-        
-
-        #forte{
-            height: auto;
-            margin-left: auto;
-            margin-right: 1em;
-        }
-        #debole{
-            height: auto;
-            margin-right: auto;
-            margin-left: 1em;
-
-        }
-
-        .content img{
-            display: block;
-            margin-top: 5rem;
-            margin-bottom: 5rem;
-            margin-left: auto;
-            margin-right: auto;
-            width: 75%;
-        }
-
-        .image1{
-            display: flex;
-            flex-direction: column;
-            top: 128px;
-            height: 600px;
-            overflow: hidden;
-            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/AI.png");
-            width: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-            margin-bottom: 200px;
-        }
-        .image1-text{
-            padding-left: 15px;
-            padding-right: 15px;
-            background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
-            box-shadow: 5px 5px 5px rgb(34, 34, 34);
-            text-align: center;
-            position: absolute;
-            top: 25%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            color: white;
-            animation: image 5s;
-        }        
-
-        .applicazioni{
-            width: 100%;
-            background-color: rgb(19, 19, 19);
-            padding: 50px 0 10em 0;
-        }
-
-        .applicazioni *{
-            color: white;
-            overflow-wrap: break-word;
-        }
-        .applicazioni h1{
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-            margin-bottom: 3em;
-
-        }
-        #app{
-            display: inline-flex;
-            flex-direction: row;
-            height: auto;
-            width: 100%;
-        }
-        #app button{
-            text-wrap: nowrap;
-            background-color: gold;
-            text-shadow: rgb(77, 77, 77) 2px 2px;
-            font-size: 32px;
-            border-radius: 24px;
-            color: white;
-            margin: 5px;
-            height:80px ;
-            transition: 0.5s;
-        }
-        #app button:hover{
-            letter-spacing: 0.05em;
-        }
-        #app button:active{
-            background-color:rgb(148, 126, 0) ;
-        }
-
-        #buttons{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            margin-left: 10%;
-            float: left;
-            width: 25%;
-            margin-right: auto;
-            row-gap: 2px;
-
-        }
-        #appTextBox{
-            margin: 0 3em 0 3em;
-            display: flex;
-            flex-direction: row;
-            float: right;
-            margin-right: 5%;
-            transition: 0.5s;
-            width: 1500px;
-            height: auto;
-        }
-        #appText{
-            margin-right: 2em;
-            margin-bottom: 5px;
-            display: flex;
-            flex-direction: column;
-            text-wrap: wrap;
-
-        }
-        #appImg{
-            align-self: center;
-            width: 600px;
-            height: 400px;
-        }
-        #appText h1{
-            margin-bottom: 1em;
-        }
-
-        #app hr{
-            margin: 0 3em 0 3em;
-            height: auto;
-            justify-self: center;
-        }
-
-    </style>
     <script>
-        function navBar(){
-            var x = document.getElementById("navigazione")
-            if(x.style.display==="block"){
-                x.style.display="none";
-            }else{
-                x.style.display="block"
-            }
-        }
-
         function buttons(obj){
             var x = obj;
             var title = document.getElementById("appTitle");
@@ -327,12 +149,17 @@
                     img.src="images/sistemaEsperto.png"
                     break;
                 case "pianificazione": 
-                    break;
+                    title.innerHTML="I Sistemi Esperti"
+                    content.innerHTML="I sistemi esperti si occupano di riprodurre in modo artificiale le prestazioni di una o più persone esperte in un determinato campo. E' dotato di una base di conoscenza dalla quale l'intelligenza artificiale può trarre informazioni, per poi giungere a una conclusione."
+                    img.src="images/sistemaEsperto.png"
                 case "domotica":
-                    break;
+                    title.innerHTML="I Sistemi Esperti"
+                    content.innerHTML="I sistemi esperti si occupano di riprodurre in modo artificiale le prestazioni di una o più persone esperte in un determinato campo. E' dotato di una base di conoscenza dalla quale l'intelligenza artificiale può trarre informazioni, per poi giungere a una conclusione."
+                    img.src="images/sistemaEsperto.png"
                 case "giochi":
-                    break;
-
+                    title.innerHTML="I Sistemi Esperti"
+                    content.innerHTML="I sistemi esperti si occupano di riprodurre in modo artificiale le prestazioni di una o più persone esperte in un determinato campo. E' dotato di una base di conoscenza dalla quale l'intelligenza artificiale può trarre informazioni, per poi giungere a una conclusione."
+                    img.src="images/sistemaEsperto.png"
             } 
 
         }
