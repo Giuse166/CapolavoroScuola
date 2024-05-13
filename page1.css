@@ -72,7 +72,8 @@ p,ul{
     margin-bottom: 5rem;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 100%;
+    height: auto;
 }
 
 .image1{
@@ -194,13 +195,16 @@ p,ul{
 
 
 @media only screen and (max-device-width:1365px){
-
+    .classificazioneAI p, .classificazioneAI h1, .classificazioneAI ul{
+        margin-left: 0.8em;
+        margin-right: 0.8em;
+    }
 
     h1{
         font-size: 24px;
     }
     p{
-        font-size: 24px;
+        font-size: 16px;
     }
 
     .content{
@@ -235,7 +239,7 @@ p,ul{
     }
 
     #appTextBox *{
-        font-size: 24px;
+        font-size: 16px;
     }
     #appTextBox h1{
         margin-left: 0;
@@ -256,7 +260,7 @@ p,ul{
     }
 
     #buttons button{
-        font-size:24px;
+        font-size:16px;
     }
 
 }

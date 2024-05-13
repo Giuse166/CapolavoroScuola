@@ -65,8 +65,8 @@ a{
     .content h1{
         font-size: 24px;
     }
-    .content p{
-        font-size: 24px;
+    .content p,li,button{
+        font-size: 16px;
     }
 
     .content{
